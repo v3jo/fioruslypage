@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&display=swap');
+/*Sizes*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; 
+    background-color: #fbe2ed    ;
+}
+
+/*Navegador*/
+.cabecera{
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30x 20x;
+    z-index: 10;
+}
+
+header.abajo{
+    background: #f3aacb;
+    padding: 15px 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    position: relative;
+    margin-right: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-shadow: 4px 4px 4px #cf1f54c4
+}
+
+.logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lobster';
+    font-size: 3rem;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    transition: 1.5s;
+    text-shadow: 4px 4px 4px #cf1f54c4
+}
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: #fff;
+}
+
+/*Header*/
+.img__header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, 
+    rgba(251, 226, 237, 0.342) 0%, 
+    rgba(235, 154, 192, 0.37) 100%),url(../assets/moon2.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__texto{
+color: #fff;
+margin-top: 20rem;
+font-family: 'Lobster';
+font-size: 6rem;
+text-shadow: 4px 4px 4px #cf1f54c4;
+}
+
+.titulo__subtexto{
+    color: #fff;
+font-family: 'Lobster';
+font-size: 3.5rem;
+text-shadow: 4px 4px 4px #cf1f54c4;
+}
+
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono__imagen{
+    height: 10vh;
+}
+
+/*Presentacion*/
+.presentation{
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+    
+}
+
+.presentation__div{
+    display: grid;
+    justify-items: center;
+    
+}
+.presentation__aside{
+    display: grid;
+    justify-items: center;
+}
+.presentation__titule{
+   font-family: 'lobster';
+   font-weight: 400;
+   font-size: 4rem;
+}
+.presentation__parrafo{
+    margin: 50px 50px;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.presentation__picture{
+    height: 90vh;
+}
+
+.presentation__subtitule{
+    font-weight: 400;
+}
+    
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+/*Gustos-Musicales*/
+.section2{
+    background-color: #f5c6db;
+}
+
+.gustos{
+    display: flex;
+    align-items: flex-start;
+}
+
+.gustos__musicales{
+    display: grid;
+    justify-items: center;
+}
+
+.gustos__titulo{
+   justify-items: center;
+   font-family: 'lobster';
+   font-weight: 400;
+   font-size: 4rem;
+}
+
