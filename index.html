@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!--Font-Awesome-->
+    <script src="https://kit.fontawesome.com/4c4a74dfb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="cabecera">
         <a href="#" class="logo">fiorusly ☾</a>
         <nav class="nav">
         <ul>
-            <li>
-                <a href="#">Inicio</a>
-                <a href="#">Quién soy</a>
-                <a href="#">Mis gustos</a>
-                <a href="#">Contacto</a>
-            </li>
+            
+            <li><a href="#inicio">Inicio</a> </li>
+            <li><a href="#bio">Quién soy</a></li>
+            <li><a href="#gustos">Mis gustos</a></li>
+            <li><a href="#contacto__form">Contacto</a></li>
+           
         </ul>
         
         </nav>
     </header>
-    <section class="img__header">
+    <section class="img__header" id="inicio">
         <div class="titulo">
-            <h1 class="titulo__texto">bienvenido a mi pagina ☾</h1>
+            <h1 class="titulo__texto" >bienvenido a mi pagina ☾</h1>
         </div>
         <div class="icono">
             <img src="assets/kitty.png" alt="kitty" class="icono__imagen">
@@ -33,11 +35,11 @@
             <h2 class="titulo__subtexto">community manager & publicidad</h2>
         </div>
     </section>
-    <div class="container">
+    <div class="container" id="bio">
         <main>
-            <section class="presentation">
+            <section class="presentation" >
                 <div class="presentation__div">
-                    <h2 class="presentation__titule">biografia</h2>
+                    <h2 class="presentation__titule" >biografia</h2>
                 <p class="presentation__parrafo">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error tempora unde ex maxime, culpa ipsa cum earum nemo ipsum impedit reprehenderit labore odio delectus, accusantium sunt modi, provident blanditiis tenetur?
                 </p>
@@ -58,7 +60,7 @@
                     <img src="assets/ariana_1.png" alt="Ariana" class="gustos__imagenes--ariana">
                 </section>
                 <div class="gustos__musicales">
-                    <h2 class="gustos__titulo">mi moonlight</h2>
+                    <h2 class="gustos__titulo" id="gustos">mi moonlight</h2>
                     <p class="presentation__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore hic architecto ab distinctio incidunt ad odit error maiores, animi nam aliquam laborum ullam reiciendis! Aliquam neque voluptates soluta architecto consectetur?
                     </p>
                 </div>
@@ -66,14 +68,14 @@
         </div>
     </section>
 
-    <div class="container">
-        <section class="contacto">
+    <div class="container" id="contacto__form">
+        <section class="contacto" >
             <div class="contact__image--wrapper">
                 <img src="assets/melody.png" alt="" class="contacto__image">
             </div>
             <div class="contact__right--side">
-                <h2 class="contact__title">Contactame♡</h2>
-                <form action="" class="contact__form--wrapper">
+                <h2 class="contact__title" >Contactame♡</h2>
+                <form action="https://formsubmit.co/rodriguez.german412@gmail.com" method="POST" class="contact__form--wrapper">
                     <div class="contact__input--line">
                         <label for="name" class="contact__label">nombre</label>
                         <input type="text" name="name" id="name" class="contact__input">
@@ -94,6 +96,9 @@
                     </div>
                     <input type="submit" value="enviar mensaje" class="contact__submit--btn">
                    
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+
+
                 </form>
             </div>
     
@@ -101,7 +106,21 @@
     </div>
 
     <footer>
-        <h2>🥵🥵Falta construir el pie de pagina🥵🥵</h2>
+        <section class="footer__container">
+            <div class="footer__content">
+                <h3 class="footer__content--title">Fiorella Beatriz Silva Larregina</h3>
+                <p class="footer__content--parraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed pariatur a dolore? Eum placeat deserunt, aut porro quaerat culpa numquam explicabo saepe ex pariatur, dolore id quis quam quibusdam eligendi.</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer__btn">
+                <p>Copyright &copy;2022 German A. Rodriguez <span>Front-End Dev.</span></p>
+            </div>
+        </section>
     </footer>
     <script src="js/script.js"></script>
 </body>

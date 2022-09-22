@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&display=swap');
 /*Sizes*/
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif; 
-    background-color: #fbe2ed    ;
+    background-color: #fbe2ed;
 }
 
 /*Navegador*/
@@ -300,3 +305,947 @@ text-shadow: 4px 4px 4px #cf1f54c4;
     background-color: #ffb7d7;
 }
 
+/*Footer*/
+.footer__container{
+    background-color: #6e2d4d;
+    height: auto;
+    width: auto;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__content--title{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    
+}
+
+.footer__content--parraf{
+max-width: 500px;
+margin: 10px auto;
+line-height: 28px;
+font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #efa9c9;
+}
+
+.footer__btn{
+    background: #18080b;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__btn p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer__btn span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.CV__link :hover{
+    color: #efa9c9;
+}
+
+/*----Media--Queries*/
+
+@media (max-width:1400px){
+    /*Navegador desplegable*/
+    .cabecera{
+        position: fixed;
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: 0.7s;
+        padding: 30x 20x;
+        z-index: 10;
+    }
+    
+    header.abajo{
+        background: #f3aacb;
+        padding: 15px 20px;
+    }
+    
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    nav ul{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+    
+    nav ul li a{
+        
+        position: relative;
+        margin-right: 20px;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+        font-weight: 800;
+        font-size: 1.2rem;
+        text-shadow: 4px 4px 4px #cf1f54c4
+    }
+    
+    .logo{
+        align-self: center;
+        margin-bottom: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Lobster';
+        font-size: 3rem;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        transition: 1.5s;
+        text-shadow: 4px 4px 4px #cf1f54c4
+    }
+    
+    header.abajo .logo,
+    header.abajo ul li a{
+        color: #fff;
+    }
+
+    /*Header*/
+.img__header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, 
+    rgba(251, 226, 237, 0.342) 0%, 
+    rgba(235, 154, 192, 0.37) 100%),url(../assets/moon2.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__texto{
+color: #fff;
+margin-top: 20rem;
+font-family: 'Lobster';
+font-size: 4.5rem;
+text-shadow: 4px 4px 4px #cf1f54c4;
+}
+
+.titulo__subtexto{
+    color: #fff;
+font-family: 'Lobster';
+font-size: 2.3rem;
+text-shadow: 4px 4px 4px #cf1f54c4;
+}
+
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono__imagen{
+    height: 10vh;
+}
+
+/*Gustos-Musicales*/
+.section2{
+    background-color: #f5c6db;
+}
+
+.gustos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.gustos__musicales{
+    display: grid;
+    justify-items: center;
+}
+
+.gustos__titulo{
+   justify-items: center;
+   font-family: 'lobster';
+   font-weight: 400;
+   font-size: 4rem;
+}
+
+/*contacto*/
+.contacto{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff9fb;
+    box-sizing: border-box;
+    box-shadow:3px 3px 20px 3px #cf1f54c4;
+    margin-left:1.5rem;
+    
+}
+
+.contact__image--wrapper{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__image{
+    width: 70%;
+}
+
+.contact__right--side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 7.3% 0 4.7%;
+    width: 50%;
+}
+
+.contact__title{
+    font-size: 90px;
+    font-family:'lobster';
+    font-weight: 400;
+    margin-bottom: 70px;
+    margin-right: 15rem;
+    text-transform: lowercase;
+    color: #7e0034;
+}
+
+.contact__form--wrapper, .contact__input--line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact__input--line{
+    margin-bottom:45px;
+}
+
+.contact__label{
+    font-size: 30px;
+    font-weight: 700;
+    color: #7e0034;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact__input{
+    height: 30px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #844463;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+}
+
+.contact__input--textarea{
+    height: 80px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #844463;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+    resize: none;
+}
+
+.contact__submit--btn{
+    padding: 18px 55px;
+    background-color:#fa85ba;
+    border-radius: 50px;
+    color: #7e0034;
+    font-weight: 600;
+    border:none;
+    font-size: 18px;
+    cursor: pointer;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.contact__submit--btn:hover{
+    background-color: #ffb7d7;
+}
+
+}
+
+@media (max-width:717px){
+    /*Navegador desplegable*/
+    .cabecera{
+        position: fixed;
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: 0.7s;
+        padding: 30x 20x;
+        z-index: 10;
+    }
+    
+    header.abajo{
+        background: #f3aacb;
+        padding: 15px 20px;
+    }
+    
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    nav ul{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+    
+    nav ul li a{
+        
+        position: relative;
+        margin-right: 20px;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+        font-weight: 800;
+        font-size: 1.2rem;
+        text-shadow: 4px 4px 4px #cf1f54c4
+    }
+    
+    .logo{
+        align-self: center;
+        margin-bottom: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Lobster';
+        font-size: 3rem;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        transition: 1.5s;
+        text-shadow: 4px 4px 4px #cf1f54c4
+    }
+    
+    header.abajo .logo,
+    header.abajo ul li a{
+        color: #fff;
+    }
+
+    /*Header*/
+.img__header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, 
+    rgba(251, 226, 237, 0.342) 0%, 
+    rgba(235, 154, 192, 0.37) 100%),url(../assets/moon2.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__texto{
+color: #fff;
+margin-top: 20rem;
+font-family: 'Lobster';
+font-size: 4.1rem;
+text-shadow: 4px 4px 4px #cf1f54c4;
+}
+
+.titulo__subtexto{
+    color: #fff;
+font-family: 'Lobster';
+font-size: 2.1rem;
+text-shadow: 4px 4px 4px #cf1f54c4;
+}
+
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono__imagen{
+    height: 10vh;
+}
+
+/*Presentacion*/
+.presentation{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.presentation__div{
+    display: grid;
+    justify-items: center;
+    
+}
+.presentation__aside{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.presentation__titule{
+   font-family: 'lobster';
+   font-weight: 400;
+   font-size: 4rem;
+}
+.presentation__parrafo{
+    margin: 50px 50px;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.presentation__picture{
+    height: 90vh;
+}
+
+.presentation__subtitule{
+    font-weight: 400;
+}
+    
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+/*Gustos-Musicales*/
+.section2{
+    background-color: #f5c6db;
+}
+
+.gustos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.gustos__musicales{
+    display: grid;
+    justify-items: center;
+}
+
+.gustos__titulo{
+   justify-items: center;
+   font-family: 'lobster';
+   font-weight: 400;
+   font-size: 4rem;
+}
+
+/*contacto*/
+.contacto{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff9fb;
+    box-sizing: border-box;
+    box-shadow:3px 3px 20px 3px #cf1f54c4;
+    margin-left:1.5rem;
+    
+}
+
+.contact__image--wrapper{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__image{
+    width: 70%;
+}
+
+.contact__right--side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 7.3% 0 4.7%;
+    width: 50%;
+}
+
+.contact__title{
+    font-size: 90px;
+    font-family:'lobster';
+    font-weight: 400;
+    margin-bottom: 70px;
+    margin-right: 15rem;
+    text-transform: lowercase;
+    color: #7e0034;
+}
+
+.contact__form--wrapper, .contact__input--line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact__input--line{
+    margin-bottom:45px;
+}
+
+.contact__label{
+    font-size: 30px;
+    font-weight: 700;
+    color: #7e0034;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact__input{
+    height: 30px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #844463;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+}
+
+.contact__input--textarea{
+    height: 80px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #844463;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+    resize: none;
+}
+
+.contact__submit--btn{
+    padding: 18px 55px;
+    background-color:#fa85ba;
+    border-radius: 50px;
+    color: #7e0034;
+    font-weight: 600;
+    border:none;
+    font-size: 18px;
+    cursor: pointer;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.contact__submit--btn:hover{
+    background-color: #ffb7d7;
+}
+
+}
+
+@media (max-width:646px){
+    /*Navegador desplegable*/
+    .cabecera{
+        position: fixed;
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: 0.7s;
+        padding: 30x 20x;
+        z-index: 10;
+    }
+    
+    header.abajo{
+        background: #f3aacb;
+        padding: 15px 20px;
+    }
+    
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    nav ul{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+    
+    nav ul li a{
+        
+        position: relative;
+        margin-right: 20px;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+        font-weight: 800;
+        font-size: 1.2rem;
+        text-shadow: 4px 4px 4px #cf1f54c4
+    }
+    
+    .logo{
+        align-self: center;
+        margin-bottom: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Lobster';
+        font-size: 3rem;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        transition: 1.5s;
+        text-shadow: 4px 4px 4px #cf1f54c4
+    }
+    
+    header.abajo .logo,
+    header.abajo ul li a{
+        color: #fff;
+    }
+
+    /*Header*/
+.img__header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, 
+    rgba(251, 226, 237, 0.342) 0%, 
+    rgba(235, 154, 192, 0.37) 100%),url(../assets/moon2.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__texto{
+color: #fff;
+margin-top: 20rem;
+font-family: 'Lobster';
+font-size: 3.5rem;
+text-shadow: 4px 4px 4px #cf1f54c4;
+}
+
+.titulo__subtexto{
+    color: #fff;
+font-family: 'Lobster';
+font-size: 1.9rem;
+text-shadow: 4px 4px 4px #cf1f54c4;
+}
+
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono__imagen{
+    height: 10vh;
+}
+
+/*Presentacion*/
+.presentation{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.presentation__div{
+    display: grid;
+    justify-items: center;
+    
+}
+.presentation__aside{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.presentation__titule{
+   font-family: 'lobster';
+   font-weight: 400;
+   font-size: 4rem;
+}
+.presentation__parrafo{
+    margin: 50px 50px;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.presentation__picture{
+    height: 90vh;
+}
+
+.presentation__subtitule{
+    font-weight: 400;
+}
+    
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+/*Gustos-Musicales*/
+.section2{
+    background-color: #f5c6db;
+}
+
+.gustos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.gustos__musicales{
+    display: grid;
+    justify-items: center;
+}
+
+.gustos__titulo{
+   justify-items: center;
+   font-family: 'lobster';
+   font-weight: 400;
+   font-size: 4rem;
+}
+
+/*contacto*/
+.contacto{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff9fb;
+    box-sizing: border-box;
+    box-shadow:3px 3px 20px 3px #cf1f54c4;
+    margin-left:1.5rem;
+    
+}
+
+.contact__image--wrapper{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__image{
+    width: 70%;
+}
+
+.contact__right--side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 7.3% 0 4.7%;
+    width: 50%;
+}
+
+.contact__title{
+    font-size: 90px;
+    font-family:'lobster';
+    font-weight: 400;
+    margin-bottom: 70px;
+    margin-right: 15rem;
+    text-transform: lowercase;
+    color: #7e0034;
+}
+
+.contact__form--wrapper, .contact__input--line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact__input--line{
+    margin-bottom:45px;
+}
+
+.contact__label{
+    font-size: 30px;
+    font-weight: 700;
+    color: #7e0034;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact__input{
+    height: 30px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #844463;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+}
+
+.contact__input--textarea{
+    height: 80px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #844463;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+    resize: none;
+}
+
+.contact__submit--btn{
+    padding: 18px 55px;
+    background-color:#fa85ba;
+    border-radius: 50px;
+    color: #7e0034;
+    font-weight: 600;
+    border:none;
+    font-size: 18px;
+    cursor: pointer;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.contact__submit--btn:hover{
+    background-color: #ffb7d7;
+}
+
+}
